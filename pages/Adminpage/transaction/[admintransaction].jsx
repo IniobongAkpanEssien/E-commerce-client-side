@@ -286,7 +286,7 @@ function admintransaction() {
                 </div>
                 <div className="qr-code">
                   <QRCode
-                    value={`https://e-commerce-client-ashen.vercel.app/Adminpage/transaction/${
+                    value={`https://elegantstores-client-side.vercel.app/Adminpage/transaction/${
                       transactID && transactID
                     }`}
                   />
