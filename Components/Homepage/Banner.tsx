@@ -25,7 +25,7 @@ function Banner() {
     <div className="banner-main-con">
       <div className="content">
         <div className="text-content">
-          <h2>AJIS STORE</h2>
+          <h2>ELEGANT COLLETIONS</h2>
 
           {/* SIAPLAYING PRODUCTS DETAILS*/}
           <div className="banner-text-con">
