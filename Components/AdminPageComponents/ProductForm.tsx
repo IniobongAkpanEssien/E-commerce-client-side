@@ -278,7 +278,9 @@ function ProductForm() {
           <option value="">Select</option>
           <option value="Software">Software</option>
           <option value="Fashion">Fashion</option>
+          <option value="Medicals">Medicals</option>
           <option value="Gadgets">Gadgets</option>
+          <option value="Beauty">Beauty</option>
         </select>
         {errors.productcategory && (
           <span

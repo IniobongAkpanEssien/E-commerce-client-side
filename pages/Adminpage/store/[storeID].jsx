@@ -372,7 +372,9 @@ function StoreID() {
               </option>
               <option value="Software">Software</option>
               <option value="Fashion">Fashion</option>
-              <option value="Gadget">Gadgets</option>
+              <option value="Medicals">Medicals</option>
+              <option value="Gadgets">Gadgets</option>
+              <option value="Beauty">Beauty</option>
             </select>
             {errors.productcategory && (
               <span
