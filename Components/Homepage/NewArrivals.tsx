@@ -75,15 +75,15 @@ function TrendingProducts({
   );
   return (
     <div className="new-products-case">
+      {productoldprice && (
+        <p className="percentage-off">
+          {percentageDifference}% <br />
+          <span>off</span>
+        </p>
+      )}
       <Link href={`/ClientDynamic/${id}`}>
         <div className="new-products">
           <div style={{ width: "100%", height: "100%", position: "relative" }}>
-            {productoldprice && (
-              <p className="percentage-off">
-                {percentageDifference}% <br />
-                <span>off</span>
-              </p>
-            )}
             <Image
               src={productimages[0]}
               alt="img"

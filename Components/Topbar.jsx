@@ -170,7 +170,7 @@ function Topbar({ dynamictriger, triga }) {
               </li>
             </Link>
             <a
-              href="https://wa.me/+2348036027773?text=Hello, I am a customer on your platfor 'AJIS STORS' and i need your support."
+              href="https://wa.me/+2348036027773?text=Hello, I am a customer on your platform ELEGANT COLLCTIONS and i need your support."
               target="_blank"
             >
               <li>

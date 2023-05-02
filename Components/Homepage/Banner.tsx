@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Fade, Slide } from "react-slideshow-image";
-
+// import { Carousel } from "react-responsive-carousel";
+import Carousely from "../Carousel";
 // firebase
 import { db, storage } from "../../Firebase";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
@@ -25,10 +26,12 @@ function Banner() {
     <div className="banner-main-con">
       <div className="content">
         <div className="text-content">
-          <h2>ELEGANT COLLETIONS</h2>
-
+          {/* <h2>
+            ELEGANT <br /> COLLETIONS
+          </h2> */}
+          <Carousely />
           {/* SIAPLAYING PRODUCTS DETAILS*/}
-          <div className="banner-text-con">
+          {/* <div className="banner-text-con">
             <Fade arrows={false}>
               {bannerDetails.map((item, index) => (
                 <div key={item.id} className="cat-desc">
@@ -39,17 +42,18 @@ function Banner() {
                     <span style={{ fontWeight: "bolder", color: "#3c91e6" }}>
                       {item.data().bannername} :{" "}
                     </span>
-                    {item.data().bannerscription.substring(0, 100).toString()}. . .
+                    {item.data().bannerscription.substring(0, 100).toString()}.
+                    . .
                   </p>
                 </div>
               ))}
             </Fade>
-          </div>
+          </div> */}
         </div>
 
         {/* SIAPLAYING PRODUCTS IMAGES*/}
         <div className="banner-product-img-main-con">
-          <div className="swiper-wrapper">
+          {/* <div className="swiper-wrapper">
             <Fade arrows={false}>
               {bannerDetails.map((item, index) => (
                 <div className="banner-img-con" key={item.id}>
@@ -68,16 +72,16 @@ function Banner() {
                 </div>
               ))}
             </Fade>
-          </div>
+          </div> */}
 
-          <img
+          {/* <img
             src="https://res.cloudinary.com/isreal/image/upload/v1679349295/E-Commerce%20Project/stand_kzmbbh.png"
             className="stand"
             alt=""
-          />
+          /> */}
 
           {/* PRODUCT BUTTON */}
-          <Link href="/products">Shop now</Link>
+          {/* <Link href="/products">Shop now</Link> */}
         </div>
       </div>
     </div>
