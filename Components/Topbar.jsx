@@ -65,59 +65,18 @@ function Topbar({ dynamictriger, triga }) {
         {/* logo side */}
         <div className="topbar-top-con-left">
           <Link href="/">
-            <SiCoinmarketcap className="icon" />
+            {/* <SiCoinmarketcap className="icon" /> */}
+            <img
+              className="icon-img"
+              src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-preview.png"
+              alt=""
+            />
           </Link>
           <p style={{ marginLeft: "5px", color: "#3c91e6" }}>
             {name && "Hello! " + name.split(" ")[0]}
           </p>
         </div>
-        <div
-          style={{
-            marginLeft: "auto",
-            height: "100%",
-            color: "#3c91e6",
-            justifyContents: "center",
-            alignItems: "center",
-            display: "flex",
-            padding: "0 10px",
-          }}
-        >
-          {name ? (
-            <button
-              style={{
-                height: "70%",
-                color: "gray",
-                cursor: "pointer",
-                border: ".1px solid gray",
-                width: "100px",
-              }}
-              onClick={() => logOUT()}
-            >
-              Sign Out
-            </button>
-          ) : (
-            <Link
-              href="/loginpage"
-              style={{
-                height: "70%",
-                cursor: "pointer",
-                width: "100px",
-              }}
-            >
-              <button
-                style={{
-                  height: "100%",
-                  color: "#3c91e6",
-                  border: "1px solid #3c91e6",
-                  width: "100px",
-                  cursor: "pointer",
-                }}
-              >
-                Sign in
-              </button>
-            </Link>
-          )}
-        </div>
+
         {/* cart and user icon */}
         <div className="topbar-top-con-right">
           <div className="cart-icon-con">

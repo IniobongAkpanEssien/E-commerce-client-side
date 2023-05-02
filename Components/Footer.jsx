@@ -6,7 +6,9 @@ import { BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { AiFillTwitterCircle, AiTwotoneMail } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 function Footer() {
+  const router = useRouter();
   // FETCHING SESSION USER NAME AND CART LENGTH
   const [userPosition, setUserPosition] = useState();
   useEffect(() => {
@@ -17,6 +19,21 @@ function Footer() {
     userName();
   }, [userPosition]);
 
+  // // FETCHING SESSION USER NAME AND CART LENGTH
+  const [name, setName] = useState(null);
+  const [cartLength, setCartLength] = useState([]);
+  const [session, setSession] = useState([]);
+  useEffect(() => {
+    async function fetchSessionUser() {
+      const userData = await getSessionUser();
+      if (userData && userData.user) {
+        setSession(userData);
+        setName(userData?.user?.username);
+        setCartLength(userData?.user.cart);
+      }
+    }
+    fetchSessionUser();
+  }, [router]);
   // console.log(userPosition);
   return (
     <section className="footer">
@@ -69,23 +86,62 @@ function Footer() {
           // style={{ width: "100%", maxWidth: "800px", margin: "0 auto" }}
         >
           <h3>contact info</h3>
-          <a href="#">
-            {" "}
-            <i className="fas fa-phone"></i> +234-810-401-5180{" "}
+          <a href="Tel:+2348036027773" target="_blank">
+            <i className="fas fa-phone"></i> +2348036027773{" "}
           </a>
           <a href="#">
-            {" "}
-            <i className="fas fa-envelope"></i>justiceyba@gmail.com
+            <i className="fas fa-envelope"></i>Elegantstorescolection@gmail.com
           </a>
+          <div
+            style={{
+              height: "100%",
+            }}
+          >
+            {name ? (
+              <button
+                style={{
+                  height: "70%",
+                  color: "gray",
+                  cursor: "pointer",
+                  border: ".1px solid gray",
+                  width: "100px",
+                }}
+                onClick={() => logOUT()}
+              >
+                Sign Out
+              </button>
+            ) : (
+              <Link
+                href="/loginpage"
+                style={{
+                  height: "70%",
+                  cursor: "pointer",
+                  width: "100px",
+                }}
+              >
+                <button
+                  style={{
+                    height: "100%",
+                    color: "#3c91e6",
+                    border: "1px solid #3c91e6",
+                    width: "100px",
+                    cursor: "pointer",
+                  }}
+                >
+                  Sign in
+                </button>
+              </Link>
+            )}
+          </div>
           <img
-            src="https://res.cloudinary.com/isreal/image/upload/v1679580817/jayflix%20vid%20posters/worldmap_mibrmb.png"
+            src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-preview.png"
             className="map"
             alt=""
           />
         </div>
       </div>
 
-      <div className="share">
+      {/* <div className="share">
         <a href="#">
           <BsFacebook />
         </a>
@@ -101,7 +157,7 @@ function Footer() {
         <a href="#">
           <AiTwotoneMail />
         </a>
-      </div>
+      </div> */}
 
       <div className="credit">
         {" "}
