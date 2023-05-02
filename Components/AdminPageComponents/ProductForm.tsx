@@ -276,7 +276,7 @@ function ProductForm() {
         <label>Product Category</label>
         <select {...register("productcategory", { required: true })}>
           <option value="">Select</option>
-          <option value="SofFashion">Software</option>
+          <option value="Software">Software</option>
           <option value="Fashion">Fashion</option>
           <option value="Gadgets">Gadgets</option>
         </select>
