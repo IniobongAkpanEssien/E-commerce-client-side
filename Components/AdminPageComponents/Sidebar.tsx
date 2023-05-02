@@ -9,6 +9,7 @@ import { MdDashboard, MdGroup, MdSettings } from "react-icons/md";
 import { RiMessage2Fill } from "react-icons/ri";
 import { BiLogOutCircle } from "react-icons/bi";
 import { FaStore, FaMoneyCheckAlt } from "react-icons/fa";
+import Cookies from "js-cookie";
 // import AdminDashboard from "../../Pages/Adminpage/AdminDashboard";
 function Sidebar() {
   const [active, setActive] = useState<number>(1);
@@ -39,14 +40,25 @@ function Sidebar() {
       setActive(6);
       return;
     }
-   
   }, [router.pathname]);
+
+  // LOGOUT
+  const logOUT = () => {
+    Cookies.remove("JWTtoken");
+    location.reload();
+    router.push("/");
+  };
   return (
     <div>
       <section id="sidebar" className="sidebar">
-        <a className="brand">
-          <GiBookCover className="bx" />
-          <span className="text">AJIS STORE</span>
+        <a className="brand" style={{ marginTop: "10px" }}>
+          <img
+            style={{ width: "60px" }}
+            src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-preview.png"
+            className="map"
+            alt=""
+          />
+          <span className="text">ELEGANT COLLECTION</span>
         </a>
         <ul className="side-menu top">
           <li
@@ -95,14 +107,16 @@ function Sidebar() {
           >
             <a href="#" className="list-items">
               <MdSettings className="list-icons" />
-              <span className="text">Settings</span>
+              <a href="Tel:08104015180" target="_blank">
+                <span className="text">AJIS</span>
+              </a>
             </a>
           </li>
           <li
             className={`${active === 7 ? "active" : ""}`}
             onClick={() => setActive(0)}
           >
-            <a href="#" className="logout">
+            <a href="/" className="logout" onClick={() => logOUT()}>
               <BiLogOutCircle className="list-icons" />
               <span className="text">Logout</span>
             </a>

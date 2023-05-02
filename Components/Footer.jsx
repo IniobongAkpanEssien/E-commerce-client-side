@@ -7,6 +7,7 @@ import { AiFillTwitterCircle, AiTwotoneMail } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 function Footer() {
   const router = useRouter();
   // FETCHING SESSION USER NAME AND CART LENGTH
@@ -35,6 +36,13 @@ function Footer() {
     fetchSessionUser();
   }, [router]);
   // console.log(userPosition);
+
+  // LOGOUT
+  const logOUT = () => {
+    Cookies.remove("JWTtoken");
+    location.reload();
+    router.push("/");
+  };
   return (
     <section className="footer">
       <div className="box-container">

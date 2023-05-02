@@ -5,6 +5,7 @@ import { getSessionUser } from "../../Services/functions";
 // ICONS
 import { GiBookCover } from "react-icons/gi";
 import { useRouter } from "next/router";
+import { FaMoneyCheckAlt } from "react-icons/fa";
 function Topbar() {
   // FETCHING SESSION USER NAME AND CART LENGTH
   const router = useRouter();
@@ -27,18 +28,29 @@ function Topbar() {
     <div id="content">
       <nav>
         <span className="top-title">
-          <GiBookCover />
-          <h1>AJIS</h1>
+          <img
+            style={{ width: "50px" }}
+            src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-preview.png"
+            className="map"
+            alt=""
+          />
+          <h1></h1>
         </span>
         <div style={{ textAlign: "center", color: "#3d91e6" }}>
           {/* <p>{name}</p> */}
           <p style={{ textTransform: "uppercase" }}>{userPosition}</p>
         </div>
         <div className="dark-mode-con">
-          {/* <div className="notification">
-            <AiFillBell className="bx bxs-bell" />
-            <span className="num">{transactionNotification.length}</span>
-          </div> */}
+          <a
+            href="https://dashboard.paystack.com/#/dashboard?period=30"
+            target="_blank"
+          >
+            {" "}
+            <div className="notification" style={{ fontSize: "40px" }}>
+              <FaMoneyCheckAlt className="bx bxs-bell" />
+              {/* <span className="num">withdraw fund</span> */}
+            </div>
+          </a>
         </div>
       </nav>
     </div>
