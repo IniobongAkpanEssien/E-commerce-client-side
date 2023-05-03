@@ -237,7 +237,7 @@ $txt-light-blue: #cfe8ff;
           @include responsive(bigphone) {
             @include flexDisplay(center, center, column);
             width: 100%;
-            height: 100%;
+            height: 23%;
           }
           @include responsive(desktop) {
             // @include flexDisplay(center, center, column);

@@ -99,7 +99,7 @@ function PayForm({
   const checkOutpayment = async () => {
     const userData = await checkOut(productData, setTransactionDetails);
   };
-
+  // console.log(product?.productcategory);
   return (
     <div className="modal-main-con">
       <div className="modal-relative">
@@ -286,43 +286,54 @@ function PayForm({
 
             <div>
               <select {...register("state", { required: true })}>
-                <option value="">Select State</option>
-                <option value="Abuja,2000">Abuja</option>
-                <option value="Abia,2000">Abia</option>
-                <option value="Adamawa,2000">Adamawa</option>
-                <option value="AkwaIbom,2000">Akwa Ibom</option>
-                <option value="Anambra,2000">Anambra</option>
-                <option value="Bauchi,2000">Bauchi</option>
-                <option value="Bayelsa,2000">Bayelsa</option>
-                <option value="Benue,2000">Benue</option>
-                <option value="Borno,2000">Borno</option>
-                <option value="CrossRiver,2000">Cross River</option>
-                <option value="Delta,2000">Delta</option>
-                <option value="Ebonyi,2000">Ebonyi</option>
-                <option value="Edo,2000">Edo</option>
-                <option value="Ekiti,2000">Ekiti</option>
-                <option value="Enugu,2000">Enugu</option>
-                <option value="Gombe,2000">Gombe</option>
-                <option value="Imo,2000">Imo</option>
-                <option value="Jigawa,2000">Jigawa</option>
-                <option value="Kaduna,2000">Kaduna</option>
-                <option value="Kano,2000">Kano</option>
-                <option value="Katsina,2000">Katsina</option>
-                <option value="Kebbi,2000">Kebbi</option>
-                <option value="Kogi,2000">Kogi</option>
-                <option value="Kwara,2000">Kwara</option>
-                <option value="Lagos,2000">Lagos</option>
-                <option value="Niger,2000">Niger</option>
-                <option value="Ogun,2000">Ogun</option>
-                <option value="Ondo,2000">Ondo</option>
-                <option value="Osun,2000">Osun</option>
-                <option value="Oyo,2000">Oyo</option>
-                <option value="Plateau,2000">Plateau</option>
-                <option value="Sokoto,2000">Sokoto</option>
-                <option value="River,2000">River</option>
-                <option value="Taraba,2000">Taraba</option>
-                <option value="Yobe,2000">Yobe</option>
-                <option value="Zamfara,2000">Zamfara</option>
+                {product?.productcategory === "Software" ? (
+                  <>
+                    <option value="">How do u want it</option>
+                    <option value="softcopy,500">Via email</option>
+                    <option value="google drive,500">Via google drive</option>
+                  </>
+                ) : (
+                  <>
+                    {" "}
+                    <option value="">Select State</option>
+                    <option value="Abuja,2000">Abuja</option>
+                    <option value="Abia,2000">Abia</option>
+                    <option value="Adamawa,2000">Adamawa</option>
+                    <option value="AkwaIbom,2000">Akwa Ibom</option>
+                    <option value="Anambra,2000">Anambra</option>
+                    <option value="Bauchi,2000">Bauchi</option>
+                    <option value="Bayelsa,2000">Bayelsa</option>
+                    <option value="Benue,2000">Benue</option>
+                    <option value="Borno,2000">Borno</option>
+                    <option value="CrossRiver,2000">Cross River</option>
+                    <option value="Delta,2000">Delta</option>
+                    <option value="Ebonyi,2000">Ebonyi</option>
+                    <option value="Edo,2000">Edo</option>
+                    <option value="Ekiti,2000">Ekiti</option>
+                    <option value="Enugu,2000">Enugu</option>
+                    <option value="Gombe,2000">Gombe</option>
+                    <option value="Imo,2000">Imo</option>
+                    <option value="Jigawa,2000">Jigawa</option>
+                    <option value="Kaduna,2000">Kaduna</option>
+                    <option value="Kano,2000">Kano</option>
+                    <option value="Katsina,2000">Katsina</option>
+                    <option value="Kebbi,2000">Kebbi</option>
+                    <option value="Kogi,2000">Kogi</option>
+                    <option value="Kwara,2000">Kwara</option>
+                    <option value="Lagos,2000">Lagos</option>
+                    <option value="Niger,2000">Niger</option>
+                    <option value="Ogun,2000">Ogun</option>
+                    <option value="Ondo,2000">Ondo</option>
+                    <option value="Osun,2000">Osun</option>
+                    <option value="Oyo,2000">Oyo</option>
+                    <option value="Plateau,2000">Plateau</option>
+                    <option value="Sokoto,2000">Sokoto</option>
+                    <option value="River,2000">River</option>
+                    <option value="Taraba,2000">Taraba</option>
+                    <option value="Yobe,2000">Yobe</option>
+                    <option value="Zamfara,2000">Zamfara</option>
+                  </>
+                )}{" "}
               </select>
               {errors.state && (
                 <span
@@ -341,9 +352,20 @@ function PayForm({
             {/* home delivery */}
             <div>
               <select {...register("homedelivery", { required: true })}>
-                <option value="">Delivery</option>
-                <option value="2000">Yes, home delivery</option>
-                <option value="0">No, I will come pick it </option>
+                {product?.productcategory === "Software" ? (
+                  <>
+                    {" "}
+                    <option value="">Operating system</option>
+                    <option value="500">Mac</option>
+                    <option value="0">Windows</option>
+                  </>
+                ) : (
+                  <>
+                    <option value="">Delivery</option>
+                    <option value="2000">Yes, home delivery</option>
+                    <option value="0">No, I will come pick it </option>
+                  </>
+                )}
               </select>
               {errors.homedelivery && (
                 <span
