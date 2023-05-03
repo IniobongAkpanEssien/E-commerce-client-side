@@ -194,7 +194,7 @@ function RecentTransactions({
                     case "Pending":
                       return "#ffce26";
                     case "success":
-                      return "#3d91e6";
+                      return "#008000a5";
                     default:
                       return "#db504a";
                   }
@@ -258,7 +258,7 @@ function RecentTransactions({
                     case "Transit":
                       return "#ffce26";
                     case "Delivered":
-                      return "#3d91e6";
+                      return "#008000a5";
                     default:
                       return "#3d91e6";
                   }

@@ -311,7 +311,7 @@ function admintransaction() {
                       userData?.user[0]?.userphonenumber
                     }?text=Hello, I am a ${
                       session?.user.username
-                    } from AJIS STORES , I am chatting as regards your Order with Ref No. ${
+                    } from ELEGANT COLLECTION , I am chatting as regards your Order with Ref No. ${
                       userData?.paystackRef
                     } made on ${userData?.timestamp
                       .substring(0, 20)
