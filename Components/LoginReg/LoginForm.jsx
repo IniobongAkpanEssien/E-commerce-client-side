@@ -46,7 +46,7 @@ function LoginForm({ flipLogin }) {
       useremail: data.useremail.toLowerCase(),
       password: data.password,
     };
-    console.log(details);
+    // console.log(details);
     logIN(setLoading, router, setErrMsg, details);
   };
 

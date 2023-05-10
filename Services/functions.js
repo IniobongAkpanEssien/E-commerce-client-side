@@ -310,11 +310,13 @@ export const transactionStatus = async (
       `https://api.paystack.co/transaction/verify/${userData?.paystackRef}`,
       {
         headers: {
-          Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}`,
+          Authorization:
+            "Bearer sk_live_07a9b2545961bcd3a5bae7c2479f78844df5e0ab",
         },
       }
     );
     const transactionStatus = response.data.data.status;
+    console.log(transactionStatus);
     updateTransaction(transactID, transactionStatus);
     // setGetTransactionDetails(response.data);
     // return response.data;
@@ -501,10 +503,12 @@ export const checkOut = async (productData, setTransactionDetails) => {
     )
     .then((resp) => {
       setTransactionDetails(resp.data.data);
+
       const refID = {
         userData: resp.data.data.Transaction,
         transactID: resp.data.data.Transaction._id,
       };
+
       localStorage.setItem("refID", JSON.stringify(refID));
       window.location.href = resp.data.data.authorization_url;
     })
