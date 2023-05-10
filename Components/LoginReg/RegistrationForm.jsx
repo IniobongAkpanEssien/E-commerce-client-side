@@ -124,7 +124,9 @@ function RegistrationForm() {
         <div className="login-top-title">
           <h2>Sign Up</h2>
           <p>Sign up to create a user acount on AJIS</p>
-          <p>Home / Signup</p>
+          <Link href="/">
+            <p>Home / Signup</p>
+          </Link>
         </div>
         <div className="form-con">
           <form className="login-form" onSubmit={handleSubmit(onSubmit)}>

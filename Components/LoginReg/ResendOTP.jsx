@@ -117,7 +117,9 @@ function ResendOTP() {
         <div className="login-top-title">
           <h2>RE-Send OTP</h2>
           <p>Enter your email to verify your account</p>
-          <p>Home / Signup</p>
+          <Link href="/">
+            <p>Home / Signup</p>
+          </Link>
         </div>
         <div className="form-con">
           <form className="login-form" onSubmit={handleSubmit(onSubmit)}>

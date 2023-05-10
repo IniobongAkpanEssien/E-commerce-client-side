@@ -122,7 +122,9 @@ function Changepw() {
       <div className="login-top-title">
         <h2>Change password</h2>
         <p>Create a new password </p>
-        <p>Home / New password</p>
+        <Link href="/">
+          <p>Home / New password</p>
+        </Link>
       </div>
       <div className="form-con">
         <form className="login-form" onSubmit={handleSubmit(onSubmit)}>

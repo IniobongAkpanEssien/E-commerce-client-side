@@ -55,7 +55,9 @@ function LoginForm({ flipLogin }) {
       <div className="login-top-title">
         <h2>Sign In</h2>
         <p>Sign in to access you account</p>
-        <p>Home / Signin</p>
+        <Link href="/">
+          <p>Home / Signin</p>
+        </Link>
       </div>
       <div className="form-con">
         <form className="login-form" onSubmit={handleSubmit(onLogin)}>

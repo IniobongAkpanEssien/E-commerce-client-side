@@ -109,7 +109,9 @@ function Forgetpw() {
         <div className="login-top-title">
           <h2>Forgot password?</h2>
           <p>Enter your email to verify your account</p>
-          <p>Home / Forgot password</p>
+          <Link href="/">
+            <p>Home / Forgot password</p>
+          </Link>
         </div>
         <div className="form-con">
           <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
