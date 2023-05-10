@@ -95,7 +95,7 @@ function TrendingProducts({
           {/* <img src={productimages[0]} alt="" /> */}
         </div>
       </Link>
-      <p className="pname">{productname}</p>
+      <h5 className="pname">{productname}</h5>
     </div>
   );
 }

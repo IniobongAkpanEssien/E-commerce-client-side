@@ -96,8 +96,14 @@ function PayForm({
   // CHECKOUT
   const [transactionDetails, setTransactionDetails] = useState();
   const router = useRouter();
+  const [btnStatus, setBtnStatus] = useState(true);
   const checkOutpayment = async () => {
     const userData = await checkOut(productData, setTransactionDetails);
+    setBtnStatus(false);
+  };
+  const cancelTransaction = async () => {
+    setBtnStatus(false);
+    router.push("/");
   };
   // console.log(product?.productcategory);
   return (
@@ -231,25 +237,33 @@ function PayForm({
                   </p>
                 </>
               )}
-
-              <div className="checkout-btn" onClick={() => checkOutpayment()}>
-                <button>
-                  CHECK OUT ( ₦{" "}
-                  {product ? (
-                    `${total.toLocaleString()}`
-                  ) : (
-                    <>
-                      {" "}
-                      {(
-                        parseInt(totalAmount) +
-                        parseInt(confirmDetails?.state?.split(",")[1]) +
-                        parseInt(confirmDetails.homedelivery)
-                      ).toLocaleString()}
-                    </>
-                  )}{" "}
-                  )
-                </button>
-              </div>
+              {btnStatus ? (
+                <div className="checkout-btn" onClick={() => checkOutpayment()}>
+                  <button>
+                    CHECK OUT ( ₦{" "}
+                    {product ? (
+                      `${total.toLocaleString()}`
+                    ) : (
+                      <>
+                        {" "}
+                        {(
+                          parseInt(totalAmount) +
+                          parseInt(confirmDetails?.state?.split(",")[1]) +
+                          parseInt(confirmDetails.homedelivery)
+                        ).toLocaleString()}
+                      </>
+                    )}{" "}
+                    )
+                  </button>
+                </div>
+              ) : (
+                <div
+                  className="checkout-btn"
+                  onClick={() => cancelTransaction()}
+                >
+                  <button>CANCEL TRANSACTION</button>
+                </div>
+              )}
             </div>
           )}{" "}
           {/* PAYMENT FORM*/}

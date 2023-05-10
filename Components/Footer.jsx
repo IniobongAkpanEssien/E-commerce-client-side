@@ -149,28 +149,31 @@ function Footer() {
         </div>
       </div>
 
-      {/* <div className="share">
-        <a href="#">
+      <div className="share">
+        <a href="/">
           <BsFacebook />
         </a>
-        <a href="#">
+        <a href="/">
           <AiFillTwitterCircle />
         </a>
-        <a href="#">
+        <a href="/">
           <FaInstagramSquare />
         </a>
-        <a href="#">
+        <a
+          href="https://wa.me/+2348036027773?text=Hello, I am a customer on your platfor 'AJIS STORS' and i need your support."
+          target="_blank"
+        >
           <BsWhatsapp />
         </a>
         <a href="#">
           <AiTwotoneMail />
         </a>
-      </div> */}
+      </div>
 
       <div className="credit">
         {" "}
-        created by <span>Justice Isreal Agbonma</span> | copyright &copy;2023 |
-        all rights reserved!{" "}
+        <span>AJIS TECHNOLOGY</span> | copyright &copy;2023 | all rights
+        reserved!{" "}
       </div>
     </section>
   );

@@ -215,7 +215,6 @@
 }
 
 .banner-main-con {
-  background: url(https://res.cloudinary.com/isreal/image/upload/v1679349263/E-Commerce%20Project/banner-bg_v0db6l.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -225,16 +224,16 @@
   }
 }
 .banner-main-con .carousel-con .carousel-items-con {
-  height: 230px;
+  height: 260px;
 }
 @media only screen and (min-width: 768px) {
   .banner-main-con .carousel-con .carousel-items-con {
-    height: 430px;
+    height: 460px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .banner-main-con .carousel-con .carousel-items-con {
-    height: 630px;
+    height: 660px;
   }
 }
 
@@ -329,6 +328,7 @@
   line-height: 1.5;
   color: #666;
   margin: 5px 0;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -352,6 +352,8 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
   padding-bottom: 10px;
 }
 .product-session-con .product-main-con h1 {
@@ -830,19 +832,17 @@
   text-align: center;
 }
 .footer .share a {
-  height: 5rem;
-  width: 5rem;
   line-height: 5rem;
-  font-size: 20px;
+  font-size: 30px;
   color: #fff;
-  margin: 0 0.3rem;
+  margin: 10px;
   border-radius: 50%;
 }
 .footer .credit {
   border-top: 0.1px solid #eee;
+  padding-bottom: 25px;
   font-size: 15px;
   text-align: center;
-  display: none;
 }
 .footer .credit span {
   color: #fff;
@@ -850,6 +850,7 @@
 @media only screen and (min-width: 768px) {
   .footer .credit {
     display: block;
+    padding-bottom: 5px;
   }
 }
 

@@ -24,8 +24,9 @@ function Review() {
               <div className="review-text">
                 <Blockquote cite="– Kola Ibrahim">
                   <p>
-                    this is the best place to get all you fashion out fit, they
-                    delivered in 2 days , no story
+                    This website is amazing! They have the best customer
+                    serveice response available. I received my order without
+                    stress. Highly recommended!
                   </p>
                 </Blockquote>
               </div>
@@ -38,8 +39,8 @@ function Review() {
               <div className="review-text">
                 <Blockquote cite="– James Osadolor">
                   <p>
-                    this is the best place to get all you fashion out fit, they
-                    delivered in 2 days , no story
+                    I can't believe how fast they deliver! I ordered my product
+                    and it arrived in just 2 days. Fantastic service and great .
                   </p>
                 </Blockquote>
               </div>
@@ -52,8 +53,9 @@ function Review() {
               <div className="review-text">
                 <Blockquote cite="– Nosa Ogbons">
                   <p>
-                    this is the best place to get all you fashion out fit, they
-                    delivered in 2 days , no story
+                    This e-commerce website is a gem! They offer a wide range of
+                    products, and their delivery is lightning fast. Couldn't be
+                    happier!{" "}
                   </p>
                 </Blockquote>
               </div>
@@ -66,8 +68,9 @@ function Review() {
               <div className="review-text">
                 <Blockquote cite="– Godwin Okpo">
                   <p>
-                    this is the best place to get all you fashion out fit, they
-                    delivered in 2 days , no story
+                    I'm thrilled with my shopping experience on this website! it
+                    is easy to navigate and the response time of the admin is
+                    fast.
                   </p>
                 </Blockquote>
               </div>
@@ -94,8 +97,9 @@ function Review() {
               <div className="review-text">
                 <Blockquote cite="– Taofiq Salem">
                   <p>
-                    this is the best place to get all you fashion out fit, they
-                    delivered in 2 days , no story
+                    I've never experienced such fast delivery before! This
+                    website offers top-notch software choices, and I received my
+                    order in my email. Highly recommend!
                   </p>
                 </Blockquote>
               </div>
@@ -108,8 +112,9 @@ function Review() {
               <div className="review-text">
                 <Blockquote cite="– Emaka Chuks">
                   <p>
-                    this is the best place to get all you fashion out fit, they
-                    delivered in 2 days , no story
+                    No need to look elsewhere for software needs! This website
+                    has it all. I placed my order, and to my surprise, it
+                    arrived in just 2 days. Exceptional service!
                   </p>
                 </Blockquote>
               </div>

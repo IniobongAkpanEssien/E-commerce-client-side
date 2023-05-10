@@ -251,8 +251,8 @@ $txt-light-blue: #cfe8ff;
 
 // BANNER STYLE
 .banner-main-con {
-  background: url(https://res.cloudinary.com/isreal/image/upload/v1679349263/E-Commerce%20Project/banner-bg_v0db6l.jpg)
-    no-repeat;
+  // background: url(https://res.cloudinary.com/isreal/image/upload/v1679349263/E-Commerce%20Project/banner-bg_v0db6l.jpg)
+  //   no-repeat;
   background-size: cover;
   background-position: center;
 
@@ -262,13 +262,13 @@ $txt-light-blue: #cfe8ff;
 
   .carousel-con {
     .carousel-items-con {
-      height: 230px;
+      height: 260px;
 
       @include responsive(bigphone) {
-        height: 430px;
+        height: 460px;
       }
       @include responsive(desktop) {
-        height: 630px;
+        height: 660px;
       }
     }
   }
@@ -358,6 +358,7 @@ $txt-light-blue: #cfe8ff;
           line-height: 1.5;
           color: $font-light;
           margin: 5px 0;
+          width: 100%;
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
@@ -376,6 +377,7 @@ $txt-light-blue: #cfe8ff;
   // margin-top: 70px;
   padding: 10px 0;
   width: 100%;
+
   overflow-x: hidden;
 
   @include responsive(bigphone) {
@@ -385,6 +387,8 @@ $txt-light-blue: #cfe8ff;
   .product-main-con {
     @include flexDisplay(space-between, center, column);
     width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
 
     h1 {
       color: $txt-blue;
@@ -887,13 +891,12 @@ $txt-light-blue: #cfe8ff;
   .share {
     padding: 1rem 0;
     text-align: center;
+
     a {
-      height: 5rem;
-      width: 5rem;
       line-height: 5rem;
-      font-size: 20px;
+      font-size: 30px;
       color: #fff;
-      margin: 0 0.3rem;
+      margin: 10px;
       border-radius: 50%;
     }
   }
@@ -901,10 +904,10 @@ $txt-light-blue: #cfe8ff;
   .credit {
     border-top: 0.1px solid $bg-gray;
     // margin-top: 20px;
-    // padding: 30px 0;
+    padding-bottom: 25px;
     font-size: 15px;
     text-align: center;
-    display: none;
+    // display: none;
     span {
       color: #fff;
     }
@@ -912,6 +915,7 @@ $txt-light-blue: #cfe8ff;
     @include responsive(bigphone) {
       // margin-top: 20px;
       display: block;
+      padding-bottom: 5px;
     }
   }
 }
