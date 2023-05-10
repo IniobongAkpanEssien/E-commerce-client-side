@@ -595,10 +595,6 @@ function SimilarProducts({
           {productoldprice && "₦ " + Number(productoldprice).toLocaleString()}
         </p>
       </div>
-
-      <Link href="/" className="addto-cart">
-        Add to cart
-      </Link>
     </div>
   );
 }
