@@ -594,6 +594,7 @@ function SimilarProducts({
           {" "}
           {productoldprice && "₦ " + Number(productoldprice).toLocaleString()}
         </p>
+        {/* bj */}
       </div>
     </div>
   );
