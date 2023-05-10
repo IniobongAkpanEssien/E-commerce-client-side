@@ -24,3 +24,4 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 # e-commerce-client
 # elegantstores-client-side
 # Jusmin-client-side
+# Jusmin-client-side
