@@ -30,7 +30,7 @@ function Topbar() {
         <span className="top-title">
           <img
             style={{ width: "50px" }}
-            src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-preview.png"
+            src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-previe.png"
             className="map"
             alt=""
           />
