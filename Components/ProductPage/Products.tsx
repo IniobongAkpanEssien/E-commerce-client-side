@@ -82,6 +82,8 @@ const Products: FC<ProductsProps> = ({ displayedProducts }) => {
                 .includes(search.toLowerCase())
             ) {
               return item;
+            } else {
+              return item;
             }
           })
           .map((product) => (

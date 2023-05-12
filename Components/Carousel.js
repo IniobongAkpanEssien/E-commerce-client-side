@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { db } from "../Firebase";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Loader from "./Loader";
 // import React from "react";
 
 function Carousely() {
@@ -20,66 +21,70 @@ function Carousely() {
     );
   }, [db, router]);
 
-  console.log(bannerDetails[0]?.data().bannercategory);
+  // console.log(bannerDetails[0]?.data().bannercategory);
   return (
     <div className="carousel-con">
-      <Carousel
-        autoPlay={true}
-        infiniteLoop={true}
-        showThumbs={false}
-        swipeable={true}
-        interval={4000}
-      >
-        {/* </div> */}
-        <div className="carousel-items-con">
-          <Image
-            src={bannerDetails[0]?.data().bannerimage}
-            alt=""
-            className="img"
-            fill
-            sizes="100vw"
-            style={{
-              right: "0",
-            }}
-          />
-        </div>
-        <div className="carousel-items-con">
-          <Image
-            src={bannerDetails[1]?.data().bannerimage}
-            alt=""
-            className="img"
-            fill
-            sizes="100vw"
-            style={{
-              right: "0",
-            }}
-          />
-        </div>
-        <div className="carousel-items-con">
-          <Image
-            src={bannerDetails[2]?.data().bannerimage}
-            alt=""
-            className="img"
-            fill
-            sizes="100vw"
-            style={{
-              right: "0",
-            }}
-          />
-        </div>
-        <div className="carousel-items-con">
-          <Image
-            src={bannerDetails[3]?.data().bannerimage}
-            alt=""
-            className="img"
-            fill
-            sizes="100vw"
-            style={{
-              right: "0",
-            }}
-          />
-        </div>
-      </Carousel>
+      {bannerDetails.length < 1 ? (
+        <Loader />
+      ) : (
+        <Carousel
+          autoPlay={true}
+          infiniteLoop={true}
+          showThumbs={false}
+          swipeable={true}
+          interval={4000}
+        >
+          {/* </div> */}
+          <div className="carousel-items-con">
+            <Image
+              src={bannerDetails[0]?.data().bannerimage}
+              alt="img"
+              className="img"
+              fill
+              sizes="100vw"
+              style={{
+                right: "0",
+              }}
+            />
+          </div>
+          <div className="carousel-items-con">
+            <Image
+              src={bannerDetails[1]?.data().bannerimage}
+              alt="img"
+              className="img"
+              fill
+              sizes="100vw"
+              style={{
+                right: "0",
+              }}
+            />
+          </div>
+          <div className="carousel-items-con">
+            <Image
+              src={bannerDetails[2]?.data().bannerimage}
+              alt="img"
+              className="img"
+              fill
+              sizes="100vw"
+              style={{
+                right: "0",
+              }}
+            />
+          </div>
+          <div className="carousel-items-con">
+            <Image
+              src={bannerDetails[3]?.data().bannerimage}
+              alt="img"
+              className="img"
+              fill
+              sizes="100vw"
+              style={{
+                right: "0",
+              }}
+            />
+          </div>
+        </Carousel>
+      )}
     </div>
   );
 }
