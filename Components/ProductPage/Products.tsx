@@ -37,7 +37,7 @@ const Products: FC<ProductsProps> = ({ displayedProducts }) => {
   }, [category, displayedProducts]);
 
   // search by input value
-  const [search, setSearch] = useState(" ");
+  const [search, setSearch] = useState("");
 
   return (
     <div className="product-page-con">
