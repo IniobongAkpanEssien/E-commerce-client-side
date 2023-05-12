@@ -12,6 +12,7 @@ import Footer from "../Components/Footer";
 
 function products() {
   const [displayedProducts, setDisplayedProducts] = useState([]);
+
   useEffect(() => {
     return onSnapshot(
       query(collection(db, "products"), orderBy("timestamp", "desc")),

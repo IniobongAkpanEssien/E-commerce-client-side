@@ -83,7 +83,7 @@ const Products: FC<ProductsProps> = ({ displayedProducts }) => {
             ) {
               return item;
             } else {
-              return item;
+              return;
             }
           })
           .map((product) => (
