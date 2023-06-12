@@ -286,7 +286,7 @@ function admintransaction() {
                 </div>
                 <div className="qr-code">
                   <QRCode
-                    value={`https://elegantcollection.vercel.app/Adminpage/transaction/${
+                    value={`https://elegantcollection.store/Adminpage/transaction/${
                       transactID && transactID
                     }`}
                   />
