@@ -98,7 +98,8 @@ function Footer() {
             <i className="fas fa-phone"></i> +2348036027773{" "}
           </a>
           <a href="#">
-            <i className="fas fa-envelope"></i>Elegantstorescolection@gmail.com
+            <i className="fas fa-envelope"></i>
+            elegantstorescollection@gmail.com
           </a>
           <div
             style={{
@@ -150,23 +151,26 @@ function Footer() {
       </div>
 
       <div className="share">
-        <a href="/">
+        <a
+          href="https://www.facebook.com/officialelegantcollection?mibextid=ZbWKwL"
+          target="_blank"
+        >
           <BsFacebook />
         </a>
-        <a href="/">
+        {/* <a href="/">
           <AiFillTwitterCircle />
-        </a>
-        <a href="/">
+        </a> */}
+        <a
+          target="_blank"
+          href="https://instagram.com/officialelegantcollection?igshid=ZGUzMzM3NWJiOQ=="
+        >
           <FaInstagramSquare />
         </a>
         <a
-          href="https://wa.me/+2348036027773?text=Hello, I am a customer on your platfor 'AJIS STORS' and i need your support."
+          href="https://wa.me/+2348036027773?text=Hello, I am a customer on your platfor 'ELEGANT COLLECTION' and i need your support."
           target="_blank"
         >
           <BsWhatsapp />
-        </a>
-        <a href="#">
-          <AiTwotoneMail />
         </a>
       </div>
 
