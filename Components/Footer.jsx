@@ -167,7 +167,7 @@ function Footer() {
           <FaInstagramSquare />
         </a>
         <a
-          href="https://wa.me/+2348036027773?text=Hello, I am a customer on your platfor 'ELEGANT COLLECTION' and i need your support."
+          href="https://wa.me/+2348036027773?text=HI WELCOME TO ELEGANTCOLLECTION STORE."
           target="_blank"
         >
           <BsWhatsapp />
