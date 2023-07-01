@@ -16,6 +16,7 @@ import Loader from "../Components/Loader";
 import { getSessionUser } from "../Services/functions";
 import { useRouter } from "next/router";
 
+import { Analytics } from "@vercel/analytics/react";
 // mantine
 import { MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
@@ -76,11 +77,13 @@ export default function MyApp({ Component, pageProps }) {
             <>
               {Component.requireAuth ? (
                 <AuthGuard>
-                  <Component {...pageProps} />{" "}
+                  <Component {...pageProps} />
+                  <Analytics />
                 </AuthGuard>
               ) : (
                 <>
                   <Component {...pageProps} />
+                  <Analytics />
                 </>
               )}
             </>
