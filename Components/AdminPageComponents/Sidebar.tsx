@@ -53,12 +53,12 @@ function Sidebar() {
       <section id="sidebar" className="sidebar">
         <a className="brand" style={{ marginTop: "10px" }}>
           <img
-            style={{ width: "60px" }}
+            style={{ width: "100px" }}
             src="https://res.cloudinary.com/dvsbb7nue/image/upload/v1688527256/WhatsApp_Image_2023-07-04_at_7.06.17_PM-removebg-preview_ohe5hq.png"
             alt="img"
             className="map"
           />
-          <span className="text">ELEGANT COLLECTION</span>
+          {/* <span className="text">ELEGANT COLLECTION</span> */}
         </a>
         <ul className="side-menu top">
           <li
