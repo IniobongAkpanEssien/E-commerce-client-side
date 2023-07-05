@@ -66,10 +66,12 @@ function Topbar({ dynamictriger, triga }) {
         <div className="topbar-top-con-left">
           <Link href="/">
             {/* <SiCoinmarketcap className="icon" /> */}
+          
             <img
               className="icon-img"
-              src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-previe.png"
-              alt=""
+              src="https://res.cloudinary.com/dvsbb7nue/image/upload/v1688527256/WhatsApp_Image_2023-07-04_at_7.06.17_PM-removebg-preview_ohe5hq.png"
+              alt="img"
+              // style={{ fontSize: "20px" }}
             />
           </Link>
           <p style={{ marginLeft: "5px", color: "#3c91e6" }}>

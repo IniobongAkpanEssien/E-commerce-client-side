@@ -113,10 +113,12 @@ $txt-light-blue: #cfe8ff;
 
     .topbar-top-con-left {
       @include flexDisplay(space-between, center, row);
-
+      // border: 1px solid red !important;
+      height: 100%;
       img {
         width: 50px;
-        // border: 1px solid red;
+        height: 100%;
+        width: 130px;
       }
     }
     .topbar-top-con-right {

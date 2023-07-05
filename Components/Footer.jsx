@@ -143,7 +143,7 @@ function Footer() {
             )}
           </div>
           <img
-            src="/WhatsApp_Image_2023-04-28_at_9.29.11_AM-removebg-preview-removebg-previe.png"
+            src="https://res.cloudinary.com/dvsbb7nue/image/upload/v1688527198/WhatsApp_Image_2023-07-04_at_7.06.16_PM__1_-removebg-preview_gbnpyh.png"
             className="map"
             alt=""
           />
@@ -176,7 +176,7 @@ function Footer() {
 
       <div className="credit">
         {" "}
-        <span>AJIS TECHNOLOGY</span> | copyright &copy;2023 | all rights
+        <span>Elegant Collection</span> | copyright &copy;2023 | all rights
         reserved!{" "}
       </div>
     </section>
