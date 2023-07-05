@@ -52,22 +52,25 @@ export default function MyApp({ Component, pageProps }) {
         />
         <meta name="description" content="Description" />
         <meta name="keywords" content="Keywords" />
-        <title>E-commerce</title>
+        <title>Elegant Collections</title>
 
         <link rel="manifest" href="/manifest.json" />
         <link
-          href="/icons/favicon-16x16.png"
+          href="https://res.cloudinary.com/dvsbb7nue/image/upload/v1688528015/WhatsApp_Image_2023-07-04_at_7.06.15_PM__1_-removebg-preview_j2cyrl.png"
           rel="icon"
           type="image/png"
           sizes="16x16"
         />
         <link
-          href="/icons/favicon-32x32.png"
+          href="https://res.cloudinary.com/dvsbb7nue/image/upload/v1688528015/WhatsApp_Image_2023-07-04_at_7.06.15_PM__1_-removebg-preview_j2cyrl.png"
           rel="icon"
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <link
+          rel="apple-touch-icon"
+          href="https://res.cloudinary.com/dvsbb7nue/image/upload/v1688528015/WhatsApp_Image_2023-07-04_at_7.06.15_PM__1_-removebg-preview_j2cyrl.png"
+        ></link>
         <meta name="theme-color" content="#317EFB" />
       </Head>
       <MantineProvider withNormalizeCSS withGlobalStyles>

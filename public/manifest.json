@@ -1,16 +1,16 @@
 {
-  "name": "AJIS Store",
-  "short_name": "AJIS Store",
+  "name": "Elegant Collections",
+  "short_name": "Elegant Collections",
   "description": "A progressive web app built with Next.js",
   "icons": [
     {
-      "src": "/icons/icon-192x192.png",
+      "src": "https://res.cloudinary.com/dvsbb7nue/image/upload/v1688528015/WhatsApp_Image_2023-07-04_at_7.06.15_PM__1_-removebg-preview_j2cyrl.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "https://res.cloudinary.com/dvsbb7nue/image/upload/v1688528015/WhatsApp_Image_2023-07-04_at_7.06.15_PM__1_-removebg-preview_j2cyrl.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
