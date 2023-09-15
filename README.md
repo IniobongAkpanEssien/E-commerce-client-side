@@ -1,4 +1,4 @@
-# [Your E-commerce Store] - Your One-Stop Shop for [Your Product Category]
+#  - Your One-Stop Shop for fashion assessories
 
 ![E-commerce Store](public/readMe.png)
 
